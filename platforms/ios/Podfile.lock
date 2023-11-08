@@ -1,0 +1,16 @@
+PODS:
+  - Facia (1.0.8)
+
+DEPENDENCIES:
+  - Facia (= 1.0.8)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Facia
+
+SPEC CHECKSUMS:
+  Facia: 20d2f9580c7553a5d6157992dfe74225bf5883f3
+
+PODFILE CHECKSUM: ddba4433e1637bbb367e2b612fbcc7215fd47a0c
+
+COCOAPODS: 1.14.2

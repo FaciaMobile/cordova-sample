@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.facia.cordova" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>faciaMobileSDK</name>
+    <js-module name="faciaMobileSDK" src="www/faciaMobileSDK.js">
+        <clobbers target="cordova.plugins.faciaMobileSDK" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="faciaMobileSDK">
+                <param name="ios-package" value="faciaMobileSDK" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/faciaMobileSDK.h" />
+        <source-file src="src/ios/faciaMobileSDK.m" />
+        <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="Facia" spec="1.0.8"/>
+            </pods>
+        </podspec>
+    </platform>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="faciaMobileSDK">
+                <param name="android-package" value="com.facia.cordova.faciaMobileSDK" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+        </config-file>
+        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference" />
+        <source-file src="src/android/faciaMobileSDK.java" target-dir="src/com/facia/cordova/faciaMobileSDK" />
+    </platform>
+
+</plugin>

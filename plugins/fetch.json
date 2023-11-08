@@ -1,0 +1,10 @@
+{
+  "com.facia.cordova": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facia-mobile-sdk"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

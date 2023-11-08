@@ -1,0 +1,21 @@
+{
+    "name": "cordova-plugin-facia-mobile-sdk",
+    "version": "1.0.0",
+    "description": "Cordova plugin for the Facia SDK",
+    "cordova": {
+      "id": "cordova-plugin-facia-mobile-sdk",
+      "platforms": ["ios", "android"]
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/FaciaMobile/cordova-core"
+    },
+    "keywords": [
+      "ecosystem:cordova",
+      "cordova-ios",
+      "cordova-android"
+    ],
+    "author": "Facia",
+    "license": "MIT"
+  }
+  

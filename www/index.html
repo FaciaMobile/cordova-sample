@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Launch Facia</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="launchButton">Launch Facia</button>
+
+<script>
+        document.getElementById('launchButton').addEventListener('click', function () {
+
+            var accessToken = 'ACCESS_TOKEN'; 
+            var config = {
+                showVerificationType: true,
+                showResult: true,
+                showFeedback: true,
+                showGreetings: true
+            };
+
+
+            cordova.exec(
+                function(result) {
+                    console.log('Facia request success:', JSON.stringify(result));
+                },
+                function(error) {
+                    console.error('Facia request error:', result);
+                },
+                'faciaMobileSDK', 
+                'createRequest',   
+                [accessToken, config]
+            );
+        });
+
+</script>
+
+<script src="cordova.js"></script>
+</body>
+</html>

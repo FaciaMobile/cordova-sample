@@ -1,0 +1,39 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"faciaMobileSDK\"><param name=\"android-package\" value=\"com.facia.cordova.faciaMobileSDK\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "com.facia.cordova": {
+      "PACKAGE_NAME": "com.facia.cordovasample"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "com.facia.cordova.faciaMobileSDK",
+      "file": "plugins/com.facia.cordova/www/faciaMobileSDK.js",
+      "pluginId": "com.facia.cordova",
+      "clobbers": [
+        "cordova.plugins.faciaMobileSDK"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "com.facia.cordova": "0.0.1"
+  }
+}

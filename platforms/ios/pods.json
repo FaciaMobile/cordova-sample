@@ -1,0 +1,21 @@
+{
+    "declarations": {
+        "use_frameworks!": {
+            "declaration": "use_frameworks!",
+            "count": 1
+        }
+    },
+    "sources": {
+        "https://github.com/CocoaPods/Specs.git": {
+            "source": "https://github.com/CocoaPods/Specs.git",
+            "count": 1
+        }
+    },
+    "libraries": {
+        "Facia": {
+            "name": "Facia",
+            "spec": "1.0.8",
+            "count": 1
+        }
+    }
+}
