@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-facia-mobile-sdk",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "description": "Cordova plugin for the Facia SDK",
     "cordova": {
       "id": "cordova-plugin-facia-mobile-sdk",

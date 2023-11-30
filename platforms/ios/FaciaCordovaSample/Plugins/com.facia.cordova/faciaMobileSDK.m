@@ -7,15 +7,18 @@
 - (void)createRequest:(CDVInvokedUrlCommand *)command {
     __block CDVPluginResult *pluginResult = nil;
 
-    // Retrieve the access token and config from the Cordova command arguments
     NSString *accessToken = [command.arguments objectAtIndex:0];
     NSDictionary *config = [command.arguments objectAtIndex:1];
 
     Facia *facia = [[Facia alloc] init];
+    NSMutableDictionary *modifiedConfig = [[self parseJSONString:config] mutableCopy];
+  
+    modifiedConfig[@"platform"] = @"cordova-1.0.5";
+
 
     [facia createRequestWithParentViewController:self.viewController
                                     accessToken:accessToken
-                                         configs:config
+                                         configs:modifiedConfig
                                       completion:^(NSDictionary *result) {
         if (result) {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:result];

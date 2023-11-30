@@ -15,7 +15,7 @@
   "devDependencies": {
     "cordova-android": "^12.0.1",
     "cordova-ios": "^7.0.1",
-    "cordova-plugin-facia-mobile-sdk": "^1.0.0"
+    "cordova-plugin-facia-mobile-sdk": "^1.0.5"
   },
   "cordova": {
     "platforms": [

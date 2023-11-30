@@ -2,7 +2,7 @@
   "com.facia.cordova": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-facia-mobile-sdk"
+      "id": "cordova-plugin-facia-mobile-sdk@^1.0.5"
     },
     "is_top_level": true,
     "variables": {}

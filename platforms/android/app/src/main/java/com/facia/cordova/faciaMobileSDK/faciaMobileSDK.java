@@ -21,6 +21,8 @@ public class faciaMobileSDK extends CordovaPlugin {
             try {
                 String accessToken = args.getString(0);
                 JSONObject config = args.getJSONObject(1);
+                config.put("appInfo", "cordova 1.0.5");
+
                 this.createRequest(accessToken, config, callbackContext);
                 return true;
             } catch (Exception e) {

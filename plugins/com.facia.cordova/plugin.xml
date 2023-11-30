@@ -18,7 +18,7 @@
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="Facia" spec="1.0.8"/>
+                <pod name="Facia" spec="1.1.1"/>
             </pods>
         </podspec>
     </platform>

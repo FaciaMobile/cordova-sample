@@ -13,5 +13,5 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.FaciaMobile:android-core:1.0.3'
+    implementation 'com.github.FaciaMobile:android-core:1.1.1'
 }

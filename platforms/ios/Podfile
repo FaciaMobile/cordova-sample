@@ -4,5 +4,5 @@ platform :ios, '11.0'
 use_frameworks!
 target 'FaciaCordovaSample' do
 	project 'FaciaCordovaSample.xcodeproj'
-	pod 'Facia', '1.0.8'
+	pod 'Facia', '1.1.1'
 end

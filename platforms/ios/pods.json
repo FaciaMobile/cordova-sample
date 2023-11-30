@@ -14,7 +14,7 @@
     "libraries": {
         "Facia": {
             "name": "Facia",
-            "spec": "1.0.8",
+            "spec": "1.1.1",
             "count": 1
         }
     }
